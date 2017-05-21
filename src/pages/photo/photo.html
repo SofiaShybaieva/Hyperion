@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar color = "primary">
+    <ion-title >Take photo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="fromCamera()" color = "secondary" round full>From camera</button>
+  
+  <button ion-button (click)="fromGallery()" color = "secondary" round full>From gallery</button>
+<img [src]="base64Image" *ngIf="base64Image" />
+</ion-content>
